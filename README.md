@@ -1,2 +1,6 @@
 # EcoTrack
-Energy-efficiencient milimiter-accuracy UWB tracking system 
+
+EcoTrack is a novel uplink phase-based UWB tracking system that significantly reduces energy consumption while still achieving millimeter-level accuracy. EcoTrack optimizes energy consumption by fundamentally redesigning conventional UWB tracking methods through two key strategies: (i) reducing the number of message transmissions;(ii) reducing location update rates. 
+Specifically, departing from conventional methods that require multiple message exchanges, we propose an uplink scheme that requires the mobile device to broadcast only a single message for each location update. For accurate phase estimation under unsynchronized multi-anchor scenarios, we propose a two-stage differential operation to cancel out the time-varying phase errors in raw phase estimates. 
+While lowering the update rate effectively reduces energy consumption, it also introduces phase ambiguity for target tracking. To tackle this challenge, we fuse wrapped UWB phase with low-power IMU readings pervasively available on mobile devices to achieve robust ambiguity resolution.
+Extensive experiments demonstrate that EcoTrack achieves over 84% reduction in energy consumption compared to existing methods, while still achieving a low median 3D tracking error of just 0.78 cm. Our demo video is available at: [![Demo Video](https://img.youtube.com/vi/iRo-80lBkxQ/maxresdefault.jpg)](https://youtu.be/iRo-80lBkxQ)
